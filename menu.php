@@ -32,17 +32,17 @@
 
 </head>
 
-<body>
+<body class="sub_page">
 
   <div class="hero_area">
     <div class="bg-box">
-      <img src="images/Food-bg.png" alt="">
+      <img src="images/hero-bg.jpg" alt="">
     </div>
     <!-- header section strats -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <span>
               Mae Ploysai
             </span>
@@ -54,119 +54,34 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.php">Home </a>
+              </li>
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="menu.php">Menu <span class="sr-only">(current)</span> </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
+                <a class="nav-link" href="about.php">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
+              
             </ul>
             <div class="user_option">
               
-              <button href="" class="order_online" data-toggle="modal" data-target="#exampleModalCenter">
+              
+              <a href="" class="order_online">
                 Login Now
-              </button>
+              </a>
             </div>
           </div>
         </nav>
       </div>
     </header>
     <!-- end header section -->
-    <!-- slider section -->
-    <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-7 col-lg-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      Fast Food Restaurant
-                    </h1>
-                    <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Order Now
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item ">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-7 col-lg-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      Fast Food Restaurant
-                    </h1>
-                    <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Order Now
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-7 col-lg-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      Fast Food Restaurant
-                    </h1>
-                    <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Order Now
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <ol class="carousel-indicators">
-            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
-            <li data-target="#customCarousel1" data-slide-to="1"></li>
-            <li data-target="#customCarousel1" data-slide-to="2"></li>
-          </ol>
-        </div>
-      </div>
-
-    </section>
-    <!-- end slider section -->
   </div>
-
-  <!-- offer section -->
-
-  <section class="offer_section layout_padding-bottom">
-    
-  </section>
-
-  <!-- end offer section -->
 
   <!-- food section -->
 
-  <section class="food_section layout_padding-bottom">
+  <section class="food_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
@@ -880,156 +795,6 @@
 
   <!-- end food section -->
 
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container  ">
-
-      <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                We Are Feane
-              </h2>
-            </div>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end about section -->
-
-  <!-- book section -->
-  <section class="book_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Book A Table
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
-              </div>
-              <div>
-                <select class="form-control nice-select wide">
-                  <option value="" disabled selected>
-                    How many persons?
-                  </option>
-                  <option value="">
-                    2
-                  </option>
-                  <option value="">
-                    3
-                  </option>
-                  <option value="">
-                    4
-                  </option>
-                  <option value="">
-                    5
-                  </option>
-                </select>
-              </div>
-              <div>
-                <input type="date" class="form-control">
-              </div>
-              <div class="btn_box">
-                <button>
-                  Book Now
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container ">
-            <div id="googleMap"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end book section -->
-
-  <!-- client section -->
-
-  <section class="client_section layout_padding-bottom">
-    <div class="container">
-      <div class="heading_container heading_center psudo_white_primary mb_45">
-        <h2>
-          What Says Our Customers
-        </h2>
-      </div>
-      <div class="carousel-wrap row ">
-        <div class="owl-carousel client_owl-carousel">
-          <div class="item">
-            <div class="box">
-              <div class="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <h6>
-                  Moana Michell
-                </h6>
-                <p>
-                  magna aliqua
-                </p>
-              </div>
-              <div class="img-box">
-                <img src="images/client1.jpg" alt="" class="box-img">
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <h6>
-                  Mike Hamell
-                </h6>
-                <p>
-                  magna aliqua
-                </p>
-              </div>
-              <div class="img-box">
-                <img src="images/client2.jpg" alt="" class="box-img">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end client section -->
-
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
@@ -1133,56 +898,6 @@
   </script>
   <!-- End Google Map -->
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true" class="ion-ios-close"></span>
-          </button>
-        </div>
-        <div class="modal-body p-4 p-md-5">
-          <div class="icon d-flex align-items-center justify-content-center">
-            <span class="ion-ios-person"></span>
-          </div>
-          <h3 class="text-center mb-4">Sign In</h3>
-          <form action="#" class="login-form">
-            <div class="form-group">
-              <input type="text" class="form-control rounded-left" placeholder="Username">
-            </div>
-            <div class="form-group d-flex">
-              <input type="password" class="form-control rounded-left" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
-            </div>
-            <div class="form-group d-md-flex">
-              <div class="form-check w-50">
-                <label class="custom-control fill-checkbox">
-                  <input type="checkbox" class="fill-control-input">
-                  <span class="fill-control-indicator"></span>
-                  <span class="fill-control-description">Remember Me</span>
-                </label>
-              </div>
-              <div class="w-50 text-md-right">
-                <a href="#">Forgot Password</a>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer justify-content-center">
-          <p>Not a member? <a href="#">Create an account</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-  <!-- Modal End -->
 </body>
 
 </html>
