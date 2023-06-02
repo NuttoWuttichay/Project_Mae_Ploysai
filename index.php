@@ -1206,7 +1206,7 @@ if(isset($_POST['submit'])){
     session_start();
     $_SESSION['username']=$row['Username'];
     $_SESSION['name']=$row['Name'];
-    header("location:about.html");
+    header("location:about.php");
   }
 }
 ?>
