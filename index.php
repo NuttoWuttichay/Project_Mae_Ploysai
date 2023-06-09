@@ -10,7 +10,7 @@
     <title>Mai Ploysai</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</head>
+    </head>
 
 <body style="background-color:#222831">
   <!-- banner --->
@@ -25,7 +25,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="image/food.jpg" class="d-block w-100" alt="...">
+                <img src="" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
