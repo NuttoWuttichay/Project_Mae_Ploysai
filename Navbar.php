@@ -26,9 +26,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <link rel="stylesheet" href="Style.css">
 
-<nav class="navbar navbar-expand-lg bg-Primary">
+<nav class="navbar navbar-expand-lg bg-Danger">
   <div class="container-fluid">
-    <a class="navbar-brand text-light" href="#">Mae Ploysai</a>
+    <a class="navbar-brand text-light" href="index.php">Mae Ploysai</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>   
