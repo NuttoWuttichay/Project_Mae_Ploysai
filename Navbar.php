@@ -1,3 +1,24 @@
+<?php
+    if(isset($_POST['submit'])){
+        include 'connect.php';
+        $username=$_POST['Username'];
+        $password=$_POST['Password'];
+        $sql="SELECT * FROM admin WHERE Username='$username'and Password='$password'";
+        $result=$con->query($sql);
+        $row=mysqli_fetch_array($result);
+        $num=mysqli_num_rows($result);
+        if($num==0){
+            echo "<script>alert('Username หรือ Password ไม่ถูกต้อง')</script>";
+        }
+        else{
+          session_start();
+            	$_SESSION['username']=$row['username'];
+            	$_SESSION['name']=$row['name'];
+				header("location:Admin/Ad_Index.php");
+        }
+    }
+?>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
@@ -39,20 +60,21 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class="conntainer">
-        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+        <div class="conntainer justify-content-center">
+        <center><br><svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
   <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-</svg>
+</svg><br><br><br></center>
           <!-- Login from -->
+          <form action="<?php $_SERVER['PHP_SELF']?>" method="POST">
       <div class="input-group flex-nowrap">
   <span class="input-group-text" id="addon-wrapping">Username</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" name="Username" aria-describedby="addon-wrapping">
 </div>
 <br>
 <div class="input-group flex-nowrap">
   <span class="input-group-text" id="addon-wrapping">Password</span>
-  <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping">
+  <input type="text" class="form-control" placeholder="Password" aria-label="Password" name="Password" aria-describedby="addon-wrapping">
 </div>
 <!--End Login from -->
         </div>
@@ -60,8 +82,9 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" class="btn btn-primary" name="submit">Login</button>
       </div>
+      </form>
     </div>
   </div>
 </div>

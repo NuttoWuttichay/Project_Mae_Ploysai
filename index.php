@@ -108,7 +108,7 @@
         </div>
     </div>
     <!-- end menu --->
-
+    <br><br>
     <?php
     include "footer.php"
     ?>
