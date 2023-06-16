@@ -10,6 +10,9 @@
     <title>Mae Ploysai</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100&display=swap" rel="stylesheet">
     </head>
 
 <body style="background-color:#222831">
@@ -25,7 +28,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="Image/food.png" class="d-block w-100" alt="...">
+                <img src="Image/food2.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
@@ -60,7 +63,7 @@
     <!-- end banner --->
     <!-- menu --->
     <div class="container align-item-center">
-        <h1 class="text-center text-light"><br>Our Menu<br><br></h1>
+        <h1 class="text-center text-light text-header"><br>Our Menu เมนู<br><br></h1>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
@@ -99,7 +102,7 @@
 
             </div>
             <div class="col d-flex justify-content-center">
-                <a class="btn btn-danger ">view more</a>
+                <a class="btn btn-danger " href="Menu.php" >VIEW MORE</a>
             </div>
             <div class="col">
 

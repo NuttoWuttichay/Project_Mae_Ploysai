@@ -1,9 +1,12 @@
+*{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
 .nav-link{
     position: relative;
     transition: all 0.2s;
 }
 .nav-link:hover{
-
+    
 }
 .nav-link:after{
     content:"";

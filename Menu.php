@@ -12,11 +12,11 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-color:#222831">
 
     <!-- menu --->
     <div class="container align-item-center">
-        <h1 class="text-center"><br>Our Menu<br><br></h1>
+        <h1 class="text-center text-white"><br>Our Menu<br><br></h1>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <?php
     $i=0;
@@ -39,20 +39,13 @@
     }
     ?>
             <br><br>
-            <div class="col">
-
-            </div>
-            <div class="col d-flex justify-content-center">
-                <a class="btn btn-danger ">view more</a>
-            </div>
-            <div class="col">
-
-            </div>
+            
             <br><br>
         </div>
     </div>
     <!-- end menu --->
-
+    <br><br>
+    <br><br>
     <?php
     include "footer.php"
     ?>
