@@ -3,7 +3,7 @@
         include 'connect.php';
         $username=$_POST['Username'];
         $password=$_POST['Password'];
-        $sql="SELECT * FROM admin WHERE Username='$username'and Password='$password'";
+        $sql="SELECT * FROM employee WHERE Emp_Username='$username'and Emp_Password='$password'";
         $result=$con->query($sql);
         $row=mysqli_fetch_array($result);
         $num=mysqli_num_rows($result);
@@ -56,8 +56,8 @@
 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+      <div class="modal-header bg-danger">
+        <h1 class="modal-title fs-5 text-light fw-bold" id="exampleModalLabel">Log in</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
