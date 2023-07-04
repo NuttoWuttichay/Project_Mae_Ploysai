@@ -24,12 +24,19 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+         <!-- CSS Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="Style.css">
 
 <nav class="navbar navbar-expand-lg bg-Danger">
   <div class="container-fluid">
-    <a class="navbar-brand text-light" href="index.php">Mae Ploysai</a>
+    <a class="navbar-brand text-light" href="index.php"><b>Mae Ploysai</b></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>   
@@ -46,7 +53,7 @@
         </li>
       </ul>
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-light " data-bs-toggle="modal" data-bs-target="#exampleModal">Login Now</button>
+<button type="button" class="btn btn-outline-light " data-bs-toggle="modal" data-bs-target="#exampleModal"><b>Login Now</b></button>
     <!-- End Button trigger modal -->      
 </div>
   </div>
@@ -57,7 +64,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header bg-danger">
-        <h1 class="modal-title fs-5 text-light fw-bold" id="exampleModalLabel">Log in</h1>
+        <h1 class="modal-title fs-5 text-light fw-bold" id="exampleModalLabel"><b>Log In</b></h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -69,12 +76,12 @@
           <!-- Login from -->
           <form action="<?php $_SERVER['PHP_SELF']?>" method="POST">
       <div class="input-group flex-nowrap">
-  <span class="input-group-text" id="addon-wrapping">Username</span>
+  <span class="input-group-text" id="addon-wrapping"><b>Username</b></span>
   <input type="text" class="form-control" placeholder="Username" aria-label="Username" name="Username" aria-describedby="addon-wrapping">
 </div>
 <br>
 <div class="input-group flex-nowrap">
-  <span class="input-group-text" id="addon-wrapping">Password</span>
+  <span class="input-group-text" id="addon-wrapping"><b>Password</b></span>
   <input type="text" class="form-control" placeholder="Password" aria-label="Password" name="Password" aria-describedby="addon-wrapping">
 </div>
 <!--End Login from -->
