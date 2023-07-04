@@ -10,8 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100&display=swap" rel="stylesheet">
-
-<div class="side-nav">
+    <div class="side-nav">
                         <a href="#" class="logo">
                             <img src="Ad_image/Logo_mae_Ploysai.png" class="logo-img">
                         </a>
