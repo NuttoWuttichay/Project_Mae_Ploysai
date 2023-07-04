@@ -12,22 +12,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div class="side-nav">
-            <a href="#" class="logo">
-                <img src="Ad_image/Logo_mae_Ploysai.png" class="logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#"><i class="fa-regular fa-house" style="color: #ffffff;"></i><p>Dashboard</p></a></li>
-                <li><a href="#"><p>Notification</p></a></li>
-                <li><a href="#"><p>Customer</p></a></li>
-                <li><a href="#"><p>Employee</p></a></li>
-                <li><a href="#"><p>Menu</p></a></li>
-                <li><a href="#"><p>Order</p></a></li>
-                <li><a href="#"><p>Order History</p></a></li>
-                <li><a href="#"><p>Logout</p></a></li>
-                <div class="active"></div>
-            </ul>
+<div class=" vh-100">
+        <div class="row row-cols-2 g-0 w-100 h-100">
+            <div class="col-2 bg-dark h-100">
+            <?php
+                include "Ad_Navbar.php"
+            ?>
+            </div>
+            <div class=" col-10 bg-danger h-100">
+                <div class="Page-Content">
+
+                </div>
+            </div>
         </div>
     </div>
 </body>
