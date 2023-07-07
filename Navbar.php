@@ -7,15 +7,28 @@
         $result=$con->query($sql);
         $row=mysqli_fetch_array($result);
         $num=mysqli_num_rows($result);
-        if($num==0){
+        $sql2="SELECT * FROM customer WHERE Cust_Username='$username'and Cust_Password='$password'";
+        $result2=$con->query($sql2);
+        $row2=mysqli_fetch_array($result2);
+        $num2=mysqli_num_rows($result2);
+        if($num==0 & $num2==0){
             echo "<script>alert('Username หรือ Password ไม่ถูกต้อง')</script>";
         }
         else{
-          session_start();
-            	$_SESSION['username']=$row['username'];
-            	$_SESSION['name']=$row['name'];
-				header("location:Admin/Ad_Index.php");
+          if($num==1){
+            session_start();
+            	$_SESSION['username']=$row['Emp_Username'];
+            	$_SESSION['name']=$row['Emp_Firstname'];
+				  header("location:Admin/Ad_Index.php");
+          }
+          else{
+            session_start();
+            	$_SESSION['username']=$row2['Cust_Username'];
+            	$_SESSION['name']=$row2['Cust_Firstname'];
+				  header("location:Index.php");
+          }
         }
+        
     }
 ?>
 
@@ -52,9 +65,21 @@
           <a class="nav-link text-light" href="About.php">About</a>
         </li>
       </ul>
-    <!-- Button trigger modal -->
+      <?php
+        @session_start();
+        @$name=$_SESSION['name'];
+        if($name!=""){
+      ?>
+        <a type="button" class="btn btn-outline-light" href="Logout.php"> <?php echo $name; ?>   </a>
+    <?php }
+    else{
+    ?>
+      <!-- Button trigger modal -->
 <button type="button" class="btn btn-outline-light " data-bs-toggle="modal" data-bs-target="#exampleModal"><b>Login Now</b></button>
-    <!-- End Button trigger modal -->      
+    <!-- End Button trigger modal -->    
+    <?php
+    }
+    ?>
 </div>
   </div>
 </nav>
