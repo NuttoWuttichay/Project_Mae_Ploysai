@@ -12,6 +12,13 @@
     <title>Home</title>
     <link rel="stylesheet" href="Ad_Style.css">
 
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" 
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        
     <!-- CSS Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +67,10 @@
                                                 <a href="#" class="btn btn-warning "><i class="bi bi-wrench"></i></a>
                                             </div>
                                             <div class="row m-1">
-                                                <a href="#" class="btn btn-danger"><i class="bi bi-trash"></i></a>
+                                                <a href="Del_Customer.php?Cust_ID=<?php echo $row['Cust_ID']?>" class="btn btn-danger del-btn">
+                                                    <i class="bi bi-trash"></i>
+
+                                            </a>
                                             </div>
                                         </div>
                                     </div>
@@ -74,3 +84,27 @@
     </div>
 </body>
 </html>
+<script>
+    $('.del-btn').on('click',function(e){
+        e.preventDefault();
+        const href = $(this).attr('href')
+        Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+            )
+            document.location.href = href;
+        }
+        })
+    })
+</script>
