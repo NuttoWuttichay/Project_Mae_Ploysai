@@ -110,7 +110,7 @@
 <br>
 <div class="input-group flex-nowrap">
   <span class="input-group-text" id="addon-wrapping"><b>Password</b></span>
-  <input type="text" class="form-control" placeholder="Password" aria-label="Password" name="Password" aria-describedby="addon-wrapping">
+  <input type="Password" class="form-control" placeholder="Password" aria-label="Password" name="Password" aria-describedby="addon-wrapping">
 </div>
 <!--End Login from -->
         </div>

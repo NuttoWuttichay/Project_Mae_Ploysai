@@ -52,6 +52,9 @@
     display: none;
     transition: top 0.5s;
 }
+.sticky{
+    position: fixed;
+}
 .nav-links li:hover a{
     color: #28242c;
     transition: 0.3s;
