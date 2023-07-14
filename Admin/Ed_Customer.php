@@ -15,7 +15,7 @@
         if($filename!=""){
             @unlink('Cust_image/'.$row['Cust_image']);
             move_uploaded_file($_FILES['Cust_image']['tmp_name'],'Cust_image/'.$filename);
-            $sql="UPDATE Customer SET Cust_Firstname='$FirstName',Cust_LastName='$Lastname',Cust_Email='$email',Cust_image='$filename',Cust_tel='$Tel',Cust_Address='$Address' WHERE Cust_Username='$username'";
+            $sql="UPDATE Customer SET Cust_Firstname='$FirstName',Cust_LastName='$Lastname',Cust_Email='$email',Cust_Image='$filename',Cust_tel='$Tel',Cust_Address='$Address' WHERE Cust_Username='$username'";
         }
         else{
             $sql="UPDATE Customer SET Cust_Firstname='$FirstName',Cust_LastName='$Lastname',Cust_Email='$email',Cust_tel='$Tel',Cust_Address='$Address' WHERE Cust_Username='$username'";
