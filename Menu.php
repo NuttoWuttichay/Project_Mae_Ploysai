@@ -1,5 +1,8 @@
 <?php
-    include "Navbar.php"
+    include "Navbar.php";
+    include "Connect.php";
+    $sql = "SELECT * FROM Food_Product";
+    $result = $con->query($sql);
 ?>
 <!doctype html>
 <html lang="en">
@@ -16,28 +19,24 @@
 
     <!-- menu --->
     <div class="container align-item-center">
-        <h1 class="text-center text-white"><br>Our Menu<br><br></h1>
+        <h1 class="text-center text-white"><br><b>Our Menu</b><br><br></h1>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <?php
-    $i=0;
-    while($i<9){
-    ?>
+        <?php
+                    $counter = 1;
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    ?>
 
             <div class="col">
                 <div class="card h-100">
-                    <img src="image/food.jpg" class="card-img-top" alt="...">
+                    <img src="Admin/Menu_Image/<?php echo $row['Pro_Image']?>" width="150" height="250" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
+                        <h5 class="card-title"><b><?php echo $row['Pro_Name']?></b></h5>
+                        <p class="card-text">ราคา : <?php echo $row['Pro_Saleprice']?></p>
                     </div>
                 </div>
             </div>
 
-            <?php
-    
-    $i++;
-    }
-    ?>
+            <?php } ?>
             <br><br>
             
             <br><br>

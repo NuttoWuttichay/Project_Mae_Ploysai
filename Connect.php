@@ -7,6 +7,7 @@
     $con=mysqli_connect($host,$user,$password,$dbname) or die (" ไม่สามารถเชื่อมต่อ database ได้ ");
     $con->query("SET NAMES UTF8");
 
+
     function date_th($ddd){
         $day_th = date('d',strtotime($ddd));
         $month = array("","มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม");
