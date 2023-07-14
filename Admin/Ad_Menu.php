@@ -23,16 +23,20 @@ $result = $con->query($sql);
             <div class=" col-10 bg-danger h-100">
                 <div class="Page-Content m-3">
                     <h1 class="text-light">Menu</h1>
-                    <?php
-                    $counter = 1;
-                    while ($row = mysqli_fetch_assoc($result)) {
-                    ?>
+                    <form> <div align="right"> 
+                    <button type="button" class="btn btn-success"><i class="bi bi-plus-square-fill"></i>&nbsp;&nbsp;Add</button>
+                    </div> </form>
+                        <?php
+                        $counter = 1;
+                        while ($row = mysqli_fetch_assoc($result)) {
+                        ?>
                         <div class="row my-3 mx-1">
+                            
                             <div class="card" style="width: 100%; height: 120px">
                                 <div class="card-body">
                                     <div class="row">
                                             <div class="col">
-                                                <img src="Menu_Image/<?php echo $row['Pro_Image']?>" width="150" class="rounded float-start" alt="...">
+                                                <img src="Menu_Image/<?php echo $row['Pro_Image']?>" width="150" height="90" class="rounded float-start" alt="...">
                                             </div>
                                             <div class="col">
                                                 <?php echo $row['Pro_Name'] ?><br><br>
